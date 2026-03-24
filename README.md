@@ -11,6 +11,8 @@ Las típicas 5 estrellitas doradas.
 
 Usa una paleta de colores frescos (azules, blancos, turquesas) y que las tipografías no sean las de siempre. Ah, y nada de imágenes de internet, que el código use assets locales. ¡Que el diseño se vea de alta calidad!"
 A new Flutter project.
+<img width="399" height="680" alt="image" src="https://github.com/user-attachments/assets/f9348939-2399-4f99-be4f-467d06305d82" />
+<img width="382" height="653" alt="image" src="https://github.com/user-attachments/assets/8d9a8acb-d70b-4912-ae56-1ca412c651e0" />
 
 ## Getting Started
 
@@ -24,6 +26,4 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
-<img width="399" height="680" alt="image" src="https://github.com/user-attachments/assets/f9348939-2399-4f99-be4f-467d06305d82" />
-<img width="382" height="653" alt="image" src="https://github.com/user-attachments/assets/8d9a8acb-d70b-4912-ae56-1ca412c651e0" />
 
