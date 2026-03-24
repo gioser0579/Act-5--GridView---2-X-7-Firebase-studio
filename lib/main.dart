@@ -20,40 +20,39 @@ class ClinicaDentalApp extends StatelessWidget {
 class CatalogoServicios extends StatelessWidget {
   const CatalogoServicios({super.key});
 
-  // Simulación de tus 14 datos (Aquí pones tus URLs de GitHub)
+  // URLs corregidas de las imágenes en GitHub
   final List<Map<String, String>> servicios = const [
-    {'titulo': 'Limpieza Pro', 'sub': 'Salud bucal completa', 'img': 'https://raw.githubusercontent.com/gioser0579/foto-examen/refs/heads/main/limpieza.jfif'},
-    {'titulo': 'Blanqueamiento', 'sub': 'Brillo instantáneo', 'img': 'https://raw.githubusercontent.com/gioser0579/foto-examen/refs/heads/main/blanqueamiento-dental.jpg'},
-    {'titulo': 'Ortodoncia', 'sub': 'Alinea tu sonrisa', 'img': 'https://raw.githubusercontent.com/gioser0579/foto-examen/refs/heads/main/ortodoncia.jfif'},
-    {'titulo': 'Implantes', 'sub': 'Recupera piezas', 'img': 'https://raw.githubusercontent.com/gioser0579/foto-examen/refs/heads/main/implantes.jfif'},
-    {'titulo': 'Diseño Sonrisa', 'sub': 'Estética premium', 'img': 'https://raw.githubusercontent.com/gioser0579/foto-examen/refs/heads/main/dise%C3%B1o%20sonrisa.jpg'},
-    {'titulo': 'Odontopediatría', 'sub': 'Cuidado para niños', 'img': 'https://raw.githubusercontent.com/gioser0579/foto-examen/refs/heads/main/odontopediatra.jpg'},
-    {'titulo': 'Endodoncia', 'sub': 'Cero dolor', 'img': 'https://raw.githubusercontent.com/gioser0579/foto-examen/refs/heads/main/endodoncia.jfif'},
-    {'titulo': 'Cirugía Oral', 'sub': 'Extracción segura', 'img': 'https://raw.githubusercontent.com/gioser0579/foto-examen/refs/heads/main/cirujia%20oaral.jpg'},
-    {'titulo': 'Periodoncia', 'sub': 'Encías fuertes', 'img': 'https://raw.githubusercontent.com/gioser0579/foto-examen/refs/heads/main/peridoncioa.jfif'},
-    {'titulo': 'Radiología', 'sub': 'Diagnóstico 3D', 'img': 'https://raw.githubusercontent.com/gioser0579/foto-examen/refs/heads/main/readiologia.jfif'},
-    {'titulo': 'Prótesis', 'sub': 'Funcionalidad total', 'img': 'https://raw.githubusercontent.com/gioser0579/foto-examen/refs/heads/main/protesis.jpg'},
-    {'titulo': 'Resinas', 'sub': 'Acabado natural', 'img': 'https://raw.githubusercontent.com/gioser0579/foto-examen/refs/heads/main/resinas.png'},
-    {'titulo': 'Guardas', 'sub': 'Anti-bruxismo', 'img': 'https://raw.githubusercontent.com/gioser0579/foto-examen/refs/heads/main/guardas.jpg'},
-    {'titulo': 'Check-up', 'sub': 'Valoración inicial', 'img': 'https://raw.githubusercontent.com/gioser0579/foto-examen/refs/heads/main/valoracion.jfif'},
+    {'titulo': 'Limpieza Pro', 'sub': 'Salud bucal completa', 'img': 'https://raw.githubusercontent.com/gioser0579/foto-examen/main/limpieza.jfif'},
+    {'titulo': 'Blanqueamiento', 'sub': 'Brillo instantáneo', 'img': 'https://raw.githubusercontent.com/gioser0579/foto-examen/main/blanqueamiento-dental.jpg'},
+    {'titulo': 'Ortodoncia', 'sub': 'Alinea tu sonrisa', 'img': 'https://raw.githubusercontent.com/gioser0579/foto-examen/main/ortodoncia.jfif'},
+    {'titulo': 'Implantes', 'sub': 'Recupera piezas', 'img': 'https://raw.githubusercontent.com/gioser0579/foto-examen/main/implantes.jfif'},
+    {'titulo': 'Diseño Sonrisa', 'sub': 'Estética premium', 'img': 'https://raw.githubusercontent.com/gioser0579/foto-examen/main/dise%C3%B1o%20sonrisa.jpg'},
+    {'titulo': 'Odontopediatría', 'sub': 'Cuidado para niños', 'img': 'https://raw.githubusercontent.com/gioser0579/foto-examen/main/odontopediatra.jpg'},
+    {'titulo': 'Endodoncia', 'sub': 'Cero dolor', 'img': 'https://raw.githubusercontent.com/gioser0579/foto-examen/main/endodoncia.jfif'},
+    {'titulo': 'Cirugía Oral', 'sub': 'Extracción segura', 'img': 'https://raw.githubusercontent.com/gioser0579/foto-examen/main/cirujia%20oaral.jpg'},
+    {'titulo': 'Periodoncia', 'sub': 'Encías fuertes', 'img': 'https://raw.githubusercontent.com/gioser0579/foto-examen/main/peridoncioa.jfif'},
+    {'titulo': 'Radiología', 'sub': 'Diagnóstico 3D', 'img': 'https://raw.githubusercontent.com/gioser0579/foto-examen/main/readiologia.jfif'},
+    {'titulo': 'Prótesis', 'sub': 'Funcionalidad total', 'img': 'https://raw.githubusercontent.com/gioser0579/foto-examen/main/protesis.jpg'},
+    {'titulo': 'Resinas', 'sub': 'Acabado natural', 'img': 'https://raw.githubusercontent.com/gioser0579/foto-examen/main/resinas.png'},
+    {'titulo': 'Guardas', 'sub': 'Anti-bruxismo', 'img': 'https://raw.githubusercontent.com/gioser0579/foto-examen/main/guardas.jpg'},
+    {'titulo': 'Check-up', 'sub': 'Valoración inicial', 'img': 'https://raw.githubusercontent.com/gioser0579/foto-examen/main/valoracion.jfif'},
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFF0F7F8), // Un azul muy pálido de fondo
+      backgroundColor: const Color(0xFFF0F7F8),
       appBar: AppBar(
         title: Text('Nuestros Servicios', 
           style: GoogleFonts.poppins(fontWeight: FontWeight.bold, color: Colors.white)),
-        backgroundColor: const Color(0xFF00B4D8), // Azul dental llamativo
+        backgroundColor: const Color(0xFF00B4D8),
         centerTitle: true,
       ),
       body: GridView.builder(
         padding: const EdgeInsets.all(12),
-        // Configuración de 2 columnas
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
-          childAspectRatio: 0.75, // Ajusta esto para ver más o menos altura
+          childAspectRatio: 0.75,
           crossAxisSpacing: 10,
           mainAxisSpacing: 10,
         ),
@@ -95,7 +94,6 @@ class CardServicio extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Imagen con bordes redondeados arriba
           Expanded(
             child: ClipRRect(
               borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
@@ -103,13 +101,21 @@ class CardServicio extends StatelessWidget {
                 imageUrl,
                 width: double.infinity,
                 fit: BoxFit.cover,
-                // Imagen de respaldo por si falla el link de GitHub
+                loadingBuilder: (context, child, loadingProgress) {
+                  if (loadingProgress == null) return child;
+                  return Center(
+                    child: CircularProgressIndicator(
+                      value: loadingProgress.expectedTotalBytes != null
+                          ? loadingProgress.cumulativeBytesLoaded / loadingProgress.expectedTotalBytes!
+                          : null,
+                    ),
+                  );
+                },
                 errorBuilder: (context, error, stackTrace) => 
-                  Container(color: Colors.cyan[100], child: const Icon(Icons.medical_services, size: 50)),
+                  Container(color: Colors.cyan[100], child: const Icon(Icons.broken_image, size: 50, color: Colors.white)),
               ),
             ),
           ),
-          // Contenido de texto
           Padding(
             padding: const EdgeInsets.all(10),
             child: Column(
@@ -124,7 +130,6 @@ class CardServicio extends StatelessWidget {
                   overflow: TextOverflow.ellipsis,
                   style: GoogleFonts.lexend(fontSize: 11, color: Colors.grey[600])),
                 const SizedBox(height: 5),
-                // Estrellitas
                 Row(
                   children: List.generate(5, (index) => 
                     const Icon(Icons.star, size: 14, color: Color(0xFFFFD700))),
